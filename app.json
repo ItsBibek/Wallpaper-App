@@ -27,7 +27,13 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-file-system",
+        {
+          "filePermission": "Allows reading and writing files to the app's documents directory."
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
